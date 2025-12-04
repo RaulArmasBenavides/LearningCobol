@@ -10,12 +10,11 @@ PROCEDURE DIVISION.
     DISPLAY "Ingrese un número: ".
     ACCEPT numero.                     *> Lee el número desde el teclado.
 
-    IF numero MOD 2 = 0
+    IF FUNCTION MOD(numero 2) = 0
         MOVE "El número es PAR" TO resultado
     ELSE
         MOVE "El número es IMPAR" TO resultado
     END-IF.
 
     DISPLAY resultado.                 *> Muestra si es par o impar.
-
     STOP RUN.
